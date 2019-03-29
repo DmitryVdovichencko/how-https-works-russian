@@ -3,10 +3,10 @@ var cheerio = require('cheerio');
 var fs = require('fs');
 const json2md = require("json2md");
 
-var urls = ['https://howhttps.works/episodes/','https://howhttps.works/why-do-we-need-https/', 'https://howhttps.works/the-keys/', 'https://howhttps.works/the-handshake/', 'https://howhttps.works/https-ssl-tls-differences/','https://howhttps.works/certificate-authorities/'];
+var urls = ['https://howhttps.works/', 'https://howhttps.works/episodes/','https://howhttps.works/why-do-we-need-https/', 'https://howhttps.works/the-keys/', 'https://howhttps.works/the-handshake/', 'https://howhttps.works/https-ssl-tls-differences/','https://howhttps.works/certificate-authorities/'];
 
 
-function parser(url){
+function parser(url ,index){
 	const results = [];
 	needle.get(url, function(err, res){
     if (err) throw err;
@@ -24,12 +24,12 @@ function parser(url){
  const fileName = url.match(/\/([^\/]+)[\/]?$/)[1];
 
 
-    write(results,`./${fileName}.md`);
+    write(results,`./${index}-${fileName}.md`);
 });
 }
 
-urls.forEach(function(item) {
-  parser(item);
+urls.forEach(function(item,i) {
+  parser(item,i);
 });
 
 
