@@ -1,0 +1,21 @@
+{
+  "name": "how-https-works-russian",
+  "version": "1.0.0",
+  "description": "app for parsing text to create russian version of howhttps.works",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/DmitryVdovichencko/how-https-works-russian.git"
+    },
+  "author": "DmitryVdovichencko",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "json2md": "^1.6.3",
+    "needle": "^2.2.4"
+  }
+}
