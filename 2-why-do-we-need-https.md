@@ -1,173 +1,176 @@
+## Picture-01
 
-Why do we need HTTPS?
+Зачем нам нужен HTTPS?
 
+## Picture-02
 
-We need HTTPS for 3 reasons
+HTTPS необходим по 3 причинам
 
+## Picture-03
 
-Privacy, integrity, and identification.
+Конфиденциальность, достоверность, и идентификация.
 
+## Picture-04
 
-Certiﬁ
+Сертифи__кэт__
 
+Сначала поговорим о конфиденциальности.
 
-cat
+## Picture-05
 
+__ПеСе__ль
 
-Let's talk about privacy first.
+Мои друзья помогут с примерами.
 
+## Picture-06
 
-Com
+Браузер__берд__
 
+## Picture-06
 
-pug
+От
 
+Кому
 
-ter
+Я отправляю сообщение Браузер__берду__.
 
+## Picture-07
 
-I'll use my friends as an example.
 
+Секретный рецепт тостов авокадо
 
-Browser
+1 тост
 
+10мл оливкового масла
 
-bird
+1 авокадо
 
 
-From
+О нет! Сообщение не зашифровано!
 
+## Picture-08
 
-T
+Краб прослушивает соединение, чтобы перехватить сообщение.
 
+## Picture-09
 
-I am sending a message to Browserbird.
+Возможно использует его на стороне зла.
 
+## Picture-10
 
-A
+Конфиденциальность означает,что никто подслушать ваше сообщение.
 
+## Picture-11
 
-secret recipe
+Плохой краб. Плохой.
 
+## Picture-12
 
-1 toast
+Пароль
 
+Когда вы посещаете вебсайт без HTTPS, я могу подглядеть ваш пароль.
 
-10ml olive oil
+## Picture-13
 
+Зеленый замок в  адресной строке вашего браузера говорит о том, что никакой краб не подглядывает из-за вашего плеча.
 
-1 avocado
+## Picture-14
 
+Причина №2: достоверность.
 
-Oh no! The message is not encrypted!
+## Picture-15
 
+Пример уже на подходе!
 
-Crab is listening on the communication capturing the message.
+## Picture-16
 
+Я отправляю другое незашифрованное сообщение Браузерберду.
 
-Potentially using it for evil.
+## Picture-17
 
+Но прежде чем оно дойдет до Браузерберда, я перехвачу сообщение.
 
-Privacy means that no one can eavesdrop on your messages.
+## Picture-18
 
+Я изменю сообщение, чтобы сказать что-нибудь плохое о Браузерберде, и отправлю это ему.
 
-Bad crab. Bad.
+## Picture-19
 
+Почему Песель говорит про меня такие вещи?
 
-P
+## Picture-20
 
+## Picture-21
 
-When you browse to a website without HTTPS, I could be eavesdropping on your password.
+Это часто называют атакой "Человек посередине".
 
+## Picture-22
 
-The green padlock on the URL bar of your browser tells you that there are no crabs watching over your shoulder.
+А "Краб посередине" еще хуже.
 
+## Picture-23
 
-Reason number 2: integrity.
+Плохой краб. Плохой.
 
+## Picture-24
 
-Example coming up!
+Достоверность означает, что сообщение не было изменено по пути до адресата.
 
+## Picture-25
 
-I am sending another message to Browserbird unencrypted.
+Я позабочусь, чтобы ваше соединение не было сфальсифицировано.
 
+## Picture-26
 
-But before it reaches Browserbird, I intercept the message.
+Причина №3: идентификация.
 
+## Picture-27
 
-I update the message to say bad things about Browserbird and forward it to him.
+Время примера!
 
+## Picture-28
 
-Why would Compugter say such things about me?
+Секретный рецепт тостов с авокадо
 
+Идентификация означает,что я могу проверить то,что это сообщение пришло именно от Песеля.
 
-This is often called a man-in-the-middle attack.
+## Picture-29
 
+Цифровая подпись, прикрепленная к сообщению, может идентифицировать отправителя.
 
-And crab-in-the-middle attacks are the worst.
+## Picture-30
 
-
-Bad Crab. Bad.
-
-
-Integrity means that the message is not manipulated on the way to its destination.
-
-
-I make sure that your communication is not being tampered with.
-
-
-Reason number 3: identification.
-
-
-Example time!
-
-
-A
-
-
-secret recipe
-
-
-Identification means that I can check that this message is coming from Compugter.
-
-
-A digital signature attached to a message can identify the sender.
-
-
-Cheers,
-
-
-Com
-
-
-pug
-
-
-ter
-
+Пока, Песель.
 
 --
 
-
-iPhone. iT
-
-
-The digital signature is not the closing text on your emails. Anyone could copy that ;)
+айфон. айопечатка. айизвиняюсь.
 
 
-And when you are browsing the web, identification means that the site that you are visiting is indeed the one you think it is.
+Цифровая подпись вовсе не заключительный текст в вашем письме. Любой может его скопировать ;)
 
+## Picture-30
 
-HTTPS, via SSL certificates, ensures you are connected exactly with the receiver you would expect.
+Когда вы пользуетесь интернетом, идентификация означает, что сайт, который вы посещаете, является именно тем сайтом, на который вы хотели зайти. 
 
+## Picture-31
 
-This SSL certificate is valid and has been issued by a legitimate Certificate Authority. You are good to go.
+HTTPS с помощью SSL сертификатов, гарантирует вам, что вы соединяетесь именно с тем получателем, которого вы ожидаете.
 
+## Picture-32
 
-We'll be talking more about SSL certificates and Certificate Authorities soon, so stay tuned.
+Этот SSL сертификат является законным и выдается легитимныим Центром Сертификации. Можете проходить.
 
+## Picture-33
 
-In summary, privacy, integrity and identification are the main reasons why HTTPS is important.
+Скоро мы поговорим подробнее о SSL сертификатах и Центрах Сертификации, так что оставайтесь на нашей волне.
 
+## Picture-34
 
-Now that we know the why, the next step is to understand symmetric and asymmetric encryption. Big words, but easy concepts.
+В общем, конфиденциальность, достоверность и идентификация являются основными причинами почему HTTPS так важен.
+
+# Далее на HowHTTPS.works...
+
+Сейчас,когда мы знаем зачем нам HTTPS, следующим шагом будет разобраться с симметричным и асимметричным шифрованием. Сложные слова, но простой смысл.
+
+`Продолжение следует...`
