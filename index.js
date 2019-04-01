@@ -24,7 +24,7 @@ function parser(url ,index){
  const fileName = url.match(/\/([^\/]+)[\/]?$/)[1];
 
 
-    write(results,`./${index}-${fileName}.md`);
+    write(results,`./${index}-${fileName}-en.md`);
 });
 }
 
