@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/DmitryVdovichencko/how-https-works-russian.git"
-    },
+    "type": "git",
+    "url": "https://github.com/DmitryVdovichencko/how-https-works-russian.git"
+  },
   "author": "DmitryVdovichencko",
   "license": "ISC",
   "dependencies": {
