@@ -80,7 +80,7 @@ https://howhttps.works
 
 ## Picture-18
 
-Пощекочем
+Потеребонькаем
 
 ## Picture-19
 
@@ -92,7 +92,7 @@ https://howhttps.works
 
 ## Picture-21
 
-Левой - Правой - Шака - Поворотная шака - Пощекочем.
+Левой - Правой - Шака - Поворотная шака - Потеребонькаем.
 
 ## Picture-22
 
@@ -108,128 +108,121 @@ https://howhttps.works
 
 ## Picture-25
 
-Шаг первый: Левой. Типа приветствие со стороны клиента.
+Шаг первый: Левой. Или приветствие со стороны клиента.
 
 ## Picture-26
 
 Я отправляю список SSL/TLS версий и алгоритмов шифрования, с которыми я могу работать, Песелю.
 
+## Picture-26
 
-A fancy word for the encryption algorithm list is "cypher suite".
+Модное словечко для списка алгоритмов шифрования - "шифрокомплект".
 
+## Picture-27
 
-So you can sound like a pro at the dinner table.
+Так что, можете почувствовать себя профи, используя это слово за ужином .
 
+## Picture-28
 
-T
+Протоколы SSL и TLS все время развиваются, скоро мы расскажем об этом подробнее.
 
+## Picture-29
 
-S
+А я, тем временем, жду ответа от ПеСеля.
 
+## Picture-30
 
-The SSL and TLS protocols have evolved over time, we'll talk more about that soonish.
+Шаг второй: Правой. Или приветствие сервера.
 
+## Picture-31
 
-And then I wait for an answer from Compugter.
+Я выбираю наилучшую версию SSL/TLS и алгоритма шифрования среди тех,что мне отправил Браузерберд, и на основании моих настроек.
 
+## Picture-32
 
-Step two: Right clap. AKA Server Hello.
+Я отправляю ответ с моим сертификатом, который включает в себя мой публичный ключ, таким образом, подтверждая кто я такой.
 
+## Picture-33
 
-I choose the best SSL/TLS version and encryption algorithm among the ones browserbird sent me, and based on my preferences.
+Шаг третий: Вертикальная шака. Или Обмен с ключом клиента.
 
+## Picture-34
 
-I reply with my certificate, which includes my public key, so they can verify who I am.
+Я проверяю сертификат ПеСеля, чтобы убедиться что он законный.
 
+## Picture-35
 
-Step three: Vertical shaka. AKA Client Key Exchange.
+Я генерирую "предварительный ключ", чтобы мы оба могли его использовать позже, при создании уникального ключа.
 
+## Picture-36
 
-I check Compugter's certificate to make sure they are legit.
+Я зашифрую этот предварительный ключ с помощью публичного ключа ПеСеля и отправлю его ему.
 
+## Picture-37
 
-I generate a "pre-master key" so we can both use it later when we generate a unique key.
+Шаг четвертый: Горизонтальная Шака. Или изменение шифра.
 
+## Picture-38
 
-I encrypt that pre-master key with Compugter's public key and then send it to him.
+Я использую мой приватный ключ чтобы расшифровать этот предварительный ключ.
 
+## Picture-39
 
-Step four: Shaka horizontal rotation. AKA Change Cypher spec.
+До сих пор соединение между ними было открытым. У них не было защищенных сообщений.
 
+## Picture-40
 
-I use my private key to decrypt the pre-master key.
+Они использовали ассиметричные ключи (публичный и приватный) чтобы зашифровать предварительный ключ, так что никто не мог его перехватить.
 
+## Picture-41
 
-So far all the communication between them has been in the open. They haven't secured any messages.
+Сейчас они оба сгенерировали одинаковый "общий секрет" который они собираются использовать как симметричный ключ.
 
+## Picture-42
 
-They used asymmetric keys (public and private keys) to encrypt the pre-master key so nobody could spy on it.
+От
 
 
-Now they both generate the same "shared secret" that they are going use as a symmetric key.
+Кому
 
 
-From
+Привет! Это тестовое сообщение, зашифрованное нашим общим секретным ключом. Ты можешь его прочесть? С этого момента, я все буду шифровать этим ключом.
 
 
-T
+И БраузерБерд отправляет тестовое сообщение.
 
+## Picture-43
 
-Hey! Here is a test message
+От
 
 
-encrypted with the shared
+Кому
 
 
-secret. Can you read this?
+Да! Все отлично. Убедись, что тоже можешь это прочесть. С этого момента, я все буду шифровать этим ключом.
 
 
-From now on, I'll encrypt
+ПеСель отвечает.
 
+## Picture-44
 
-everything with this key
+Шаг пятый: Потеребонькаем. Или, теперь все защищено.
 
+Сейчас все данные проходящие между Браузербердом и ПеСелем защищены до конца сеанса.
 
-And browserbird sends a test.
+## Picture-44
 
+Пароли, данные кредитных кард, всё остальное.
 
-From
+## Picture-45
 
+Довольно просто, правда?
 
-T
+## Picture-46
 
+В следующий раз при защищенном соединении с сайтом использующим HTTPS, отбейте вашему бразеру шаку потому что теперь вы знаете их секретное рукопожатие.
 
-Y
 
+# Далее на HowHTTPS.works...
 
-you can also read this. From
-
-
-now on, I'll encrypt everything
-
-
-with this key
-
-
-Compugter responds.
-
-
-Step five: Tickles. AKA Everything is now secured.
-
-
-Now all data going back and forth between Browserbird and Computer is now secured for the rest of the session.
-
-
-https://dnsimple.com
-
-
-Passwords, credit card details, everything.
-
-
-Simple, right?
-
-
-Next time you connect to a website securely via HTTPS, give your browser the shaka because you know their secret handshake.
-
-
-HTTPS, SSL, TLS, oh my! I just had an acronym soup for lunch. What do they mean? Are they the same thing?
+HTTPS, SSL, TLS, о блин! Похоже на ланч у меня был суп из акронимов. Что они все означают? Они все одно и то же?
