@@ -1,92 +1,118 @@
+## Picture-01
 
-The Handshake
+Рукопожатие
 
-
-https://howhttps.works
-
-
-When you started reading this comic, your browser displayed a green lock on the address bar.
-
-
-How did that happen?
-
-
-Your browser communicated with our server, where this comic is hosted, and they both established a secure connection to transmit messages.
-
-
-But first, they needed to agree on how to communicate securely.
-
+## Picture-02
 
 https://howhttps.works
 
 
-If the negotiation is not successful, your browser lets you know by showing an error or warning.
+Когда вы начали читать этот комикс, ваш браузер отобразил зеленый значок в адресной строке.
 
+## Picture-03
+
+Как это произошло?
+
+## Picture-04
+
+Ваш браузер соединился с нашим серевером, где размещен этот комикс, и они оба установили безопасное соединение для передачм сообщений.
+
+## Picture-05
+
+Но сначала, им нужно было договориться о том как обеспечить безопасное соединение.
+
+## Picture-06
 
 https://howhttps.works
 
 
-If an agreement is reached, your browser is happy to display a green padlock on the address bar.
+Если переговоры завершились неудачно, ваш браузер даст вам знать отобразив ошибку или предупреждение.
+
+## Picture-07
+
+https://howhttps.works
 
 
-THE HANDSHAKE
+Если соглашение было достигнуто, ваш браузер будет рад отобразить зеленый замок в адресной строке.
+
+## Picture-08
+
+РУКОПОЖАТИЕ
 
 
-This process, the negotiation between a browser and a server, is called "the handshake".
+Этот процесс переговоров между браузером и сервером называется "рукопожатием" 
 
+## Picture-09
 
-It happens very fast. We are going to show you how it works.
+Это происходит очень быстро. Мы покажем вам как это работает.
 
+## Picture-10
 
-Browserbird will be your browser.
+Браузерберд будет вашим браузером.
 
+## Picture-11
 
-Compugter will be our server.
+ПеСель будет нашим сервером
 
+## Picture-12
 
-Take it away guys!
+Вам слово, ребята!
 
+## Picture-13
 
-Ready? Here is what the "handshake" in slow-motion looks like.
+Готовы? Вот как выглядит "рукопожатие" в слоумо.
 
+## Picture-14
 
-Left clap
+Левой
 
+## Picture-15
 
-Right clap
+Правой
 
+## Picture-16
 
-Vertical shaka
+Вертикальная шака
 
+## Picture-17
 
-Shaka horizontal rotation
+Горизонтальная шака
 
+## Picture-18
 
-Tickles
+Пощекочем
 
+## Picture-19
 
-Done!
+Готово!
 
+## Picture-20
 
-Let's do it again, but faster.
+Давай еще раз, только быстрее.
 
+## Picture-21
 
-Left clap - Right clap - Shaka - Shaka rotation - Tickles.
+Левой - Правой - Шака - Поворотная шака - Пощекочем.
 
+## Picture-22
 
-A-G-A-I-N !
+Е-Щ-Ё !
 
+## Picture-23
 
-Stop!
+Да хорош!
 
+## Picture-24
 
-Let's break it down. Step by step.
+Попробуем разобраться. Шаг за шагом.
 
+## Picture-25
 
-Step One: Left clap. AKA Client Hello.
+Шаг первый: Левой. Типа приветствие со стороны клиента.
 
+## Picture-26
 
-I send a list of SSL/TLS versions and encryption algorithms that I can work with to Compugter.
+Я отправляю список SSL/TLS версий и алгоритмов шифрования, с которыми я могу работать, Песелю.
 
 
 A fancy word for the encryption algorithm list is "cypher suite".
