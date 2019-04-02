@@ -1,175 +1,122 @@
+## Picture-01
 
-The differences between HTTPS, SSL, and TLS
+В чем различие между HTTPS, SSL, и TLS
 
+## Picture-02
 
-It's easy to confuse these terms and use them interchangeably.
+Довольно легко запутаться в этих терминах и использовать их как взаимозаменяемые.
 
+## Picture-03
 
-Let's look into each one and see how they differ.
+Давайте посмотри на каждый из них, и увидим в чем их различие.
 
+## Picture-04
 
-What's HTTPS?
+Что такое HTTPS?
 
+## Picture-05
 
-HTTPS is the secured version of HTTP: "HyperText Transfer Protocol".
+HTTPS - это защищенная версия протокола HTTP: «протокола передачи гипертекста».
 
+## Picture-06
 
-HTTP is the protocol used by your browser and web servers to communicate and exchange information.
+HTTP это протокол, который используется браузером и веб серверами для связи и обмена информацией.
 
+## Picture-07
 
+Когда мы обмениваемся данными зашифрованными с помощью SSL/TLS, мы называем это HTTPS. И "S", здесь, "Secure" - "Защищенный".
 
+## Picture-08
 
-SSL/TLS
+Блинн! Погоди! Я что, сказал SSL/TLS? Почему?
 
+## Picture-09
 
-When that exchange of data is encrypted with SSL/TLS, then we call it HTTPS. The "S" stands for "Secure".
+Потому что это верный способ поговорить о SSL и TLS.
 
+## Picture-10
 
-OMG! Wait! Did I say SSL/TLS! Why?
+SSL означает  "уровень защищённых cокетов" ("Secure Sockets Layer"). Этот протокол был создан Netscape.
 
+## Picture-11
 
-Because it's the precise way to talk about SSL and TLS.
+SSL - динозавр интернет стандартов. Первая версия так и не была выпущена, а вторая была запущена вместе с браузером Netscape 1.1 в 1995.
 
+## Picture-12
 
-SSL stands for "Secure Sockets Layer". A protocol created by Netscape.
+Позже, в том же году Netscape выпустил версию 3, т.к. версия 2 имела серьезные проблемы в безопасности.
 
+## Picture-13
 
-SSL is a dinosaur by Internet standards. The first version was never released and version 2 launched with the browser Netscape 1.1 in 1995.
+Мы все были счастливыми котиками до 1999. Войны браузеров между Netscape и Microsoft, необходимость стандартов и Britney Spears - "...Baby One More Time" изменили мир, каким мы его знали до этого. Навсегда
 
-
-Later that year Netscape released version 3 because version 2 had some major security problems.
-
-
-We were all happy cats until 1999. 
-
+## Picture-14
 
 Oops, I did it again.
 
+## Picture-15
 
-Netscape gave control of SSL protocol to the IETF: Internet Engineering Task Force.
+Netscape отдал контроль над SSL протоколом организации IETF: Инженерному совету интернета.
 
+## Picture-16
 
-Before 1999 ended, IETF released TLS version 1.0 (Which was really SSL 3.1).
+До конца 1999, IETF выпустило версию TLS 1.0 (что на самом деле являлось версией SSL 3.1) 
 
+## Picture-17
 
-SSL was renamed to TLS: "Transport Layer Security". Creating confusion and chaos still to this day.
+SSL был переименован в TLS: "Протокол защиты транспортного уровня"("Transport Layer Security"). Что создало хаос в терминах который продолжается по сей день.
 
+## Picture-18
 
-Thanks 1999.
+Спасибо тебе за все 1999.
 
+## Picture-19
 
-1.0
+Версия TLS 1.0 сменилась версией 1.1 в 2006.
 
+## Picture-20
 
-1999
+Пару лет спустя, в 2008, была выпущена версия TLS 1.2 для устранения нескольких недостатков и багов.
 
+## Picture-21
 
-2006
+Как бы там ни было, до 2013 года, ни один из браузеров не начал поддерживать версию TLS 1.2.
 
+## Picture-22
 
-1
+Плюс ко всему, версия SSL 3.0 была официально признана устаревшей в 2015.
 
+## Picture-23
 
-TLS 1.0 took off and version 1.1 was released in 2006.
+TLS 1.3 был утвержден в марте 2018 и ваш браузер, возможно, уже поддерживает его.
 
+## Picture-24
 
-1.0
+TLS 1.3 привнес глобальные улучшения безопасности и избавился от устаревшого уязвимого функционала.
 
+## Picture-25
 
-1999
+Не беспокойтесь, если ваш браузер еще не поддерживает этот протокол. TLS 1.2 все еще является рекомендованной версией, если вы читаете это весной/летом 2018.
 
+## Picture-26
 
-2006
+Подведем итоги.
 
+## Picture-27
 
-2008
+HTTPS это тот же HTTP протокол но с шифрованием данных с помощью SSL/TLS.
 
+## Picture-28
 
-1
+SSL является изначальным, и устаревшим на текущий момент, протоколом, созданным Netscape в середине 90х.
 
+## Picture-29
 
-1
+TLS - актуальный протокол для защищенного шифрования в вебе, поддерживаемый IETF.
 
+## Picture-30
 
-A couple of years later, in 2008, TLS 1.2 was released to address a few flaws and exploits.
+Итак, теперь вы в курсе всей истории.
 
-
-1.0
-
-
-1999
-
-
-2006
-
-
-2008
-
-
-2013
-
-
-1
-
-
-1
-
-
-However, it's not until 2013 that browsers start to catch up and add support for TLS 1.2.
-
-
-To add to the confusion, SSL 3.0 was officially deprecated in 2015.
-
-
-1.0
-
-
-1999
-
-
-2006
-
-
-2008
-
-
-2018
-
-
-1
-
-
-1
-
-
-1
-
-
-tls 1.3 was approved in march 2018 and your browser might already support it. 
-
-
-TLS 1.3 brings great security improvements and removes old weaker features.
-
-
-No worries if your browser doesn't support it yet. TLS 1.2 is still the recommended version if you are reading this in Spring/Summer 2018.
-
-
-Let's recap.
-
-
-HTTP
-
-
-HTTPS is just the HTTP protocol but with data encryption using SSL/TLS.
-
-
-SSL is the original and now deprecated protocol created at Netscape in the mid 90s.
-
-
-TLS is the new protocol for secured encryption on the web maintained by IETF.
-
-
-And now you know the hiss-tory.
-
-
-Certificates and Certificate authorities: What Do They Know? Do They Know Things?? Let's Find Out!
+# Далее на HowHTTPS.works...
+Сертификаты и Центры Сертификации: О чем они знают? Они в курсе всей ситуации?? Давайте разбираться!
