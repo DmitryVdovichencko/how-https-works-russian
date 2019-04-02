@@ -1,76 +1,78 @@
+## Picture-01
 
-The differences between HTTPS, SSL, and TLS
+В чем различие между HTTPS, SSL, и TLS
 
+## Picture-02
 
-It's easy to confuse these terms and use them interchangeably.
+Довольно легко запутаться в этих терминах и использовать их как взаимозаменяемые.
 
+## Picture-03
 
-Let's look into each one and see how they differ.
+Давайте посмотри на каждый из них, и увидим в чем их различие.
 
+## Picture-04
 
-What's HTTPS?
+Что такое HTTPS?
 
+## Picture-05
 
-HTTPS is the secured version of HTTP: "HyperText Transfer Protocol".
+HTTPS - это защищенная версия протокола HTTP: «протокола передачи гипертекста».
 
+## Picture-06
 
-HTTP is the protocol used by your browser and web servers to communicate and exchange information.
+HTTP это протокол, который используется браузером и веб серверами для связи и обмена информацией.
 
+## Picture-07
 
+Когда мы обмениваемся данными зашифрованными с помощью SSL/TLS, мы называем это HTTPS. И "S", здесь, "Secure" - "Защищенный".
 
+## Picture-08
 
-SSL/TLS
+Блинн! Погоди! Я что, сказал SSL/TLS? Почему?
 
+## Picture-09
 
-When that exchange of data is encrypted with SSL/TLS, then we call it HTTPS. The "S" stands for "Secure".
+Потому что это верный способ поговорить о SSL и TLS.
 
+## Picture-10
 
-OMG! Wait! Did I say SSL/TLS! Why?
+SSL означает  "уровень защищённых cокетов" ("Secure Sockets Layer"). Этот протокол был создан Netscape.
 
+## Picture-11
 
-Because it's the precise way to talk about SSL and TLS.
+SSL - динозавр интернет стандартов. Первая версия так и не была выпущена, а вторая была запущена вместе с браузером Netscape 1.1 в 1995.
 
+## Picture-12
 
-SSL stands for "Secure Sockets Layer". A protocol created by Netscape.
+Позже, в том же году Netscape выпустил версию 3, т.к. версия 2 имела серьезные проблемы в безопасности.
 
+## Picture-13
 
-SSL is a dinosaur by Internet standards. The first version was never released and version 2 launched with the browser Netscape 1.1 in 1995.
+Мы все были счастливыми котиками до 1999. Войны браузеров между Netscape и Microsoft, необходимость стандартов и Britney Spears - "...Baby One More Time" изменили мир, каким мы его знали до этого. Навсегда
 
-
-Later that year Netscape released version 3 because version 2 had some major security problems.
-
-
-We were all happy cats until 1999. 
-
+## Picture-14
 
 Oops, I did it again.
 
+## Picture-15
 
-Netscape gave control of SSL protocol to the IETF: Internet Engineering Task Force.
+Netscape отдал контроль над SSL протоколом организации IETF: Инженерному совету интернета.
 
+## Picture-16
 
-Before 1999 ended, IETF released TLS version 1.0 (Which was really SSL 3.1).
+До конца 1999, IETF выпустило версию TLS 1.0 (что на самом деле являлось версией SSL 3.1) 
 
+## Picture-17
 
-SSL was renamed to TLS: "Transport Layer Security". Creating confusion and chaos still to this day.
+SSL был переименован в TLS: "Протокол защиты транспортного уровня"("Transport Layer Security"). Что создало хаос в терминах который продолжается по сей день.
 
+## Picture-18
 
-Thanks 1999.
+Спасибо тебе за все 1999.
 
+## Picture-19
 
-1.0
-
-
-1999
-
-
-2006
-
-
-1
-
-
-TLS 1.0 took off and version 1.1 was released in 2006.
+Версия TLS 1.0 сменилась версией 1.1 в 2006.
 
 
 1.0
