@@ -13,6 +13,7 @@ function parser(url ,index){
     
     const $ = cheerio.load(res.body);
   $('main *').each(function(i,elem){
+
   	   	if(checkTextElement(elem.name)){
    		if (elem.name==='span'||elem.name==='text') elem.name='p';
    		if (elem.children[0].data!==undefined) {results.push(getElementObj(elem.name, elem.children[0].data));}
