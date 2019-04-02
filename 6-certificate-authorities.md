@@ -1,592 +1,196 @@
+## Picture 01
 
-Certificate Authorities
+Центры Сертификации.
 
+## Picture 02
 
-A certificate authority (CA) is a third-party organization with 3 main objectives:
+Центр Сертификации (CA) - сторонняя организация с 3 основными задачами:
 
+## Picture 03
 
-HOW
+1. Выпуск сертификатов.
 
+## Picture 04
 
-HTTPS
+2. Подтверждение  личности the обладателя сертификата.
 
+## Picture 05
 
-.WORKS
+3. Предоставление доказательств того, что сертификат является действительным.
 
+## Picture 06
 
-1. Issuing certificates.
+Возможно вы слышали о Symantec, Comodo, или Let's Encrypt среди прочих.
 
+## Picture 07
 
-HOW
+Чтобы стать Центром Сертификации (CA) нужно выполнить ряд требований по безопасности и пройти аудит.
 
+## Picture 08
 
-HTTPS
+ГЛАВНОЕ ХРАНИЛИЩЕ
 
+Вам должны доверить получение доступа к главному хранилищу.
 
-.WORKS
+## Picture 09
 
+Главное хранилище в принципе является базой данных доверенных Центров Сертификации (CA).
 
-2. Confirming the identity of the certificate owner.
+## Picture 10
 
+ГЛАВНОЕ ХРАНИЛИЩЕ
 
-HOW
+Apple, Windows, и Mozilla запустили свои собственные главные хранилища,которые предустановлены на вашем компьютере или устройстве.
 
+## Picture 11
 
-HTTPS
+Какой сертификат вы должны купить? У вас есть 3 основных типа.
 
+## Picture 12
 
-.WORKS
+Домен проверен. Сертификат просто проверяет доменное имя, и больше ничего. Возможно, вам нужен именно он.
 
+## Picture 13
 
-3. Providing proof that the certificate is valid.
+Организация проверена. Требуется подтверждение и ручная проверка организации для получения сертификата.
 
-
-You might have heard of Symantec, Comodo, or Let's Encrypt, among others.
-
-
-Becoming a CA is an intense task of security requirements and audits.
-
-
-R O O T S T O R E
-
-
-You need to be trusted to be accepted into a root store.
-
-
-Let's
-
-
-Sym
-
-
-Digi
-
-
-GoD
-
-
-Com
-
-
-A root store is basically a database of trusted CAs.
-
-
-R O O T S T O R E
-
-
-Apple, Windows, and Mozilla run their own root stores that they pre-install in your computer or device.
-
-
-Which certificate should you buy? You have basically 3 flavors.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-Domain validated. The certificate just verifies the domain name, and nothing else. You probably need this one.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-From DNSimple
-
-
-Organization validated. The certificate requires the validation and manual verification of the organization behind the certificate.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
+## Picture 14
 
 dnsimple.com:
 
+Они фанаты тостов с авокадо 
+и всех видов мороженого.
+Некоторые из них считают что сборная Италии 
+должна была пройти на ЧМ 2018 по футболу.
 
-They
+Расширенная проверка. Сертификат запрашивает исчерпывающую информацию об организации.
 
+## Picture 15
 
-are fans of avocado
+Все подтвержденные сертификаты в результате отображаются в браузере в виде зеленого значка в панели браузера. Расширенные версии (EV) сертификатов, также отображают название организации.
 
+## Picture 16
 
-toast and any ice-cream
+Но каким образом сертификаты проходят проверку?
 
+## Picture 17
 
-ﬂavor
+Когда Центр Сертификации (CA) выпускает сертификат, они подписывают его главным сертификатом предустановленным в главном хранилище.
 
+## Picture 18
 
-Some of them think that
+В основном, это промежуточный сертификат,подписанный главным сертификатом.
 
+## Picture 19
 
-Italy should have been
+Если случается катастрофа и главный сертификат скомпроментирован, гораздо легче аннулировать промежуточные сертификаты, т.к. главные сертификаты установлены на каждом устройстве.
 
+## Picture 20
 
-in the 2018 soccer world
+Давайте пройдем через всю проверку сертификата. Этот процесс называется "цепочка доверия".
 
+## Picture 21
 
-cup.
+Ваш браузер соединяется с сайтом через HTTPS и загружает сертификат.
 
+## Picture 22
 
-Extended validation. The certificate requires an exhaustive verification of the business.
+Этот сертификат не является главным сертификатом.
 
+## Picture 23
 
-Certiﬁcat, Inc (US)
+Ваш браузер загружает сертификат, котрый был использован для подписи сертификата на сайте.
 
+## Picture 24
 
-https://howhttps.works
+Но и этот сертификат не является главным.
 
+## Picture 25
 
-All valid certificates result in the browser displaying a secure badge in the browser bar. EV certificates generally display the company name as well.
+Ваш браузер еще раз проверяет сертфикат, которым подписан промежуточный сертификат.
 
+## Picture 26
 
-C
+И вот это уже главный сертификат! Йеее!
 
+## Picture 27
 
-E
+Вся цепочка сертификата проверена, а значит сертификату на сайте можно доверять.
 
+## Picture 28
 
-R
+В случае когда последний сертификат не является главным, и больше не осталось сертификатов для загрузки, цепочка не является доверенной. 
 
+## Picture 29
 
-T
+Но зачем использовать центр сертификации, если вы можете использовать самоподписные сертификаты?
 
+## Picture 30
 
-I
+Самоподписные сертификаты обеспечивают тот же уровень шифрования, что и сгенерированные центром сертификации.
 
+## Picture 31
 
-F
+Никакой краб не перехватит ваши данные.
 
+## Picture 32
 
-I
+И кроме того, самоподписные сертификаты бесплатны!
 
+## Picture 33
 
-C
+Это так, но почти каждый браузер проверяет выпущен ли сертификат доверенным центром.
 
+## Picture 34
 
-A
+Как посетителей вас предупредят что сертификату нельзя доверять.
 
+## Picture 35
 
-T
+Самоподписные сертификаты могут быть полезны для тестирования и внутренних сетей, но вы должны избегать их использования на публичных сайтах.
 
+## Picture 36
 
-A
+Самоподписные сертификаты могут быть подделаны. В основном, они будут говорить: "Доверяй мне, это я, мамой клянусь".
 
+## Picture 37
 
-P
+Доверенный сертификат скажет: "Доверяй мне, я проверен центром сертификации".
 
+## Picture 38
 
-P
+Кстати о доверии. Спасибо, что доверяете нам, читая весь этот комикс.
 
+## Picture 39
 
-R
+К сожалению, он подходит к концу.
 
+## Picture 40
 
-O
+Надеемся вам понравилось!
 
+## Picture 41
 
-V
+До скорой встречи!
 
+# Хэхэй, вы это сделали!
 
-E
+Вы закончили комикс! Спасибо от наших котанов, что провели свой день за чтением об HTTPS.
 
+Мы предлагаем вам 3 задания, чтобы отвлечь вас от того факта, что все эпизоды закончились.
 
-D
 
+## 1. Пройдите опрос.
 
-But how do certificates get validated?
+Вы можете проверить свои свежие знания об HTTPS в нашем тесте (на английском). Да все верно. Мы даже отправим вам сертификат о выполнении теста, если вы наберете достаточно баллов.
 
+##  2. Поделитесь в соцсетях.
 
-R
+Все люди это делают. Если вы хотите от нас больше комиксов, вот несколько примеров, которые заставят нас поднапрячься.
 
+## 3. Посетите DNSimple
 
-C
+Если вам понравился комикс, и вам нужен SSL сертификат для защиты вашего сайта, или надежный и удобный DNS (это не наши слова), или зарегистрировать новый прикольный домен, заходите к нам.
 
 
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-When a CA issues a certificate, they sign the certificate with their root certificate pre-installed in the root store.
-
-
-R
-
-
-C
-
-
-M
-
-
-C
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-Most of the time it's an intermediate certificate signed with a root certificate.
-
-
-If a cat-astrophy would occur and the root certificate is compromised, it's easier to revoke the intermediate certificates, since the root certificates are installed on each device.
-
-
-Let's walk through how a certificate is validated. The process is based on a "chain of trust".
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-Your browser connects to a site via HTTPS and downloads the certificate.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-The certificate is not a root certificate.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-MID
-
-
-CERT
-
-
-Your browser downloads the certificate that was used to sign the certificate on the site.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-MID
-
-
-CERT
-
-
-But this certificate is still not the root certificate.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-MID
-
-
-CERT
-
-
-ROOT
-
-
-CER
-
-
-Your browser once more looks up the certificate that signed the intermediate certificate.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-MID
-
-
-CERT
-
-
-ROOT
-
-
-CER
-
-
-It's the root certificate! Yay!
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-MID
-
-
-CERT
-
-
-ROOT
-
-
-CER
-
-
-The entire certificate chain is trusted, and thus the site certificate is trusted as well.
-
-
-In the event that the last certificate is not a root certificate, and there are no more certificates to download, the chain is untrusted.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-But why use a certificate authority when you can self-sign your certificates?
-
-
-vk7pwbmi+4xSYdNnXO
-
-
-6qPCXBt27J1L7YBqQG
-
-
-jzn0zq+CW9qPdlnnOW
-
-
-qTXPymxtVq+UY
-
-
-JXtA
-
-
-/swgXZiTpOduoN1UsO
-
-
-H/1kfVKV33QjvUCwCzq
-
-
-+CW9qUnxGEgTL+3...
-
-
-A self-signed certificate provides the same level of encryption as one generated by an authority.
-
-
-HE770 - D/_/^^ÿ
-
-
-No crabs can spy on your data.
-
-
-$$$
-
-
-$$$
-
-
-And there is no charge to self-sign your certificates!
-
-
-Yes, but almost every browser checks that the certificate is issued by a trusted authority.
-
-
-https://howhttps.works
-
-
-Y
-
-
-is
-
-
-not
-
-
-secured
-
-
-Here be dragons
-
-
-As such visitors are warned that the certificate cannot be trusted.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-Self-signed certificates can be useful for testing, and intranets, but you should avoid using them on public sites.
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-Self-signed certificates can be forged. Basically, they say "Trust me, it's me, I promise!".
-
-
-HOW
-
-
-HTTPS
-
-
-.WORKS
-
-
-MID
-
-
-CERT
-
-
-ROOT
-
-
-CER
-
-
-A trusted certificate says: "Trust me, an authority verified me".
-
-
-Talking about trust. Thank you for trusting us through this story.
-
-
-Unfortunately, it is coming to an end.
-
-
-We hope you enjoyed this comic!
-
-
-See you soon!
-
-# Hey, you did it!
-
-
-You finished the comic! Thanks from the bottom of of our cat paws for spending some of your day reading about HTTPS.
-
-
-We propose three activities to distract you from the fact that there is not another episode to read.
-
-
-To make it up to you, you can test your brand hot knowledge of HTTPS in a 
-
-
-The human thing to do. If you want to put more pressure on us to make more comics, here are a few examples to get us to the edge of our seats.
-
-
-I want my new comic right meow 😸 @dnsimple! #certificat https://howhttps.works
-
-
-Don't cat corners! ✂ 🐈 but make more comics @dnsimple #certificat https://howhttps.works
-
-
-I have a good feline about this upcoming comic @dnsimple 😻 #certificat https://howhttps.works
-
-
-Bad crab. Bad @dnsimple. 🦀 Make more comics! #crab https://howhttps.works
-
-
- If you enjoyed the comic, and need an SSL certificate to secure your site, or a rock solid and easy-to-use DNS (not our words), or a brand new fancy domain, have a look at us.
-
-
-P.S. If you want to suggest a new episode (please no, because we'll have to update this page) or give us feedback about the existing ones, 
+П.С. если вы хотите предложить новый эпизод (пожалуйста не надо, нам придется обновлять эту страницу) или вы хотите оставить отзыв об этих эпизодах, наши котаны готовы вас выслушать.
